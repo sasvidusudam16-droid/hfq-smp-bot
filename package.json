@@ -10,7 +10,8 @@
   "scripts": {
     "start": "node index.js",
     "deploy": "node src/deploy-commands.js",
-    "emojis": "node scripts/emoji-art.js && node scripts/upload-emojis.js"
+    "emojis": "node scripts/emoji-art.js && node scripts/upload-emojis.js",
+    "upload": "node scripts/upload-to-server.js"
   },
   "dependencies": {
     "@napi-rs/canvas": "^0.1.65",
