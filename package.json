@@ -1,0 +1,21 @@
+{
+  "name": "hfq-custom-smp-bot",
+  "version": "1.0.0",
+  "description": "Management bot for the HFQ Custom SMP Discord server",
+  "main": "index.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "deploy": "node src/deploy-commands.js",
+    "emojis": "node scripts/emoji-art.js && node scripts/upload-emojis.js"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "^0.1.65",
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5",
+    "ssh2-sftp-client": "^11.0.0"
+  }
+}
